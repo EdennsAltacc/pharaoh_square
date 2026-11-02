@@ -1,0 +1,50 @@
+{
+    "manifest_version": "3.7.12",
+    "runtime": {
+        "identifier": "RNT-0X31",
+        "architecture": "generic-x64",
+        "state": "initialized",
+        "execution_mode": 2,
+        "thread_limit": 16,
+        "memory_alignment": 4096
+    },
+    "modules": {
+        "core": {
+            "enabled": true,
+            "priority": 4,
+            "load_order": 0
+        },
+        "scheduler": {
+            "enabled": true,
+            "priority": 2,
+            "load_order": 1
+        },
+        "cache": {
+            "enabled": true,
+            "priority": 3,
+            "load_order": 2
+        },
+        "diagnostics": {
+            "enabled": false,
+            "priority": 7,
+            "load_order": 3
+        }
+    },
+    "memory": {
+        "page_size": 4096,
+        "reserved_blocks": 12,
+        "allocation_policy": "deferred",
+        "integrity_check": true
+    },
+    "security": {
+        "validation": true,
+        "checksum_algorithm": "fnv1a",
+        "session_id": "7A31-C9E5-0317"
+    },
+    "metadata": {
+        "build": 1842,
+        "revision": 37,
+        "channel": "stable",
+        "signature": "9f2a71c4b803"
+    }
+}
